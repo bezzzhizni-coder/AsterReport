@@ -40,6 +40,9 @@ check_registrations() {
      if  grep -q 'No Authentication' ${TEMP_FILE}; then
         echo 'alarm' >> ${REPORT_FILE}
      else
+```
++mail report
+```
 #    grep -E 'Registration|Status' ${TEMP_FILE} >> ${REPORT_FILE}
 #    awk '{print $1}' | grep -E 'Username' ${TEMP_FILE} >> ${REPORT_FILE}
 #    grep -E 'Registration|Event' ${TEMP_FILE} >> ${REPORT_FILE}
