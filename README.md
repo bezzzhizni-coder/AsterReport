@@ -41,7 +41,7 @@ check_registrations() {
         echo 'alarm' >> ${REPORT_FILE}
      else
 ```
-+mail report
++add here mail report
 ```
 #    grep -E 'Registration|Status' ${TEMP_FILE} >> ${REPORT_FILE}
 #    awk '{print $1}' | grep -E 'Username' ${TEMP_FILE} >> ${REPORT_FILE}
